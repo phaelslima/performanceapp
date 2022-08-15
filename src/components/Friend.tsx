@@ -3,9 +3,10 @@ import { Text, TouchableOpacity, View } from 'react-native'
 
 interface Props {
   data: {
-    id: number
+    id: string
     name: string
     likes: number
+    online: string
   },
   follow: () => void
 }
@@ -20,6 +21,8 @@ function FriendComponent({ data, follow }: Props) {
       <TouchableOpacity onPress={follow}>
         <Text>Deixar de seguir</Text>
       </TouchableOpacity>
+
+      <Text>Online em: {data.online}</Text>
     </View>
   )
 }

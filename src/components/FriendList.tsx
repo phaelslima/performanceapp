@@ -5,9 +5,10 @@ import { Friend } from './Friend'
 
 interface Props {
   data: {
-    id: number
+    id: string
     name: string
     likes: number
+    online: string
   }[]
   follow: () => void
 }
