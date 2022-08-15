@@ -5,7 +5,7 @@ interface Props {
   data: {
     id: number
     name: string
-    likes: string
+    likes: number
   }
 }
 
